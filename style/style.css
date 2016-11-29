@@ -1,0 +1,32 @@
+body {
+font-family: 'Roboto', sans-serif;
+font-size: 1rem;
+}
+.logo {
+font-size: 2rem;
+font-weight: 700;
+color: #313234;
+font-family: 'Roboto Slab', serif;
+letter-spacing: 3px;
+}
+nav {
+-webkit-box-shadow: 2px 1px 25px -10px rgba(0,0,0,0.3);
+-moz-box-shadow: 2px 1px 25px -10px rgba(0,0,0,0.3);
+box-shadow: 2px 1px 25px -10px rgba(0,0,0,0.3);
+}
+.nav {
+display: flex;
+justify-content: space-between;
+}
+.aside {
+
+}
+.aside img {
+width: 400px;
+height: 100%;
+z-index: 200;
+object-fit: cover;
+}
+.inner-container {
+display: flex;
+}
