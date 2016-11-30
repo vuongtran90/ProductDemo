@@ -17,7 +17,7 @@ export default class Wine extends Component {
                             <img src={wine.img} alt={wine.name} />
                         </figure>
                         <span className="name">{wine.name}</span>
-                        <span className="price">${wine.price}</span>
+                        <span className="price">&#36;{wine.price}</span>
                     </div>
                 </Link>
             )

@@ -10,6 +10,12 @@ color: #e13640;
 font-family: 'Roboto Slab', serif;
 letter-spacing: 3px;
 }
+.banner {
+margin-top: 3rem;
+-webkit-box-shadow: 2px 1px 25px -10px rgba(0,0,0,0.3);
+-moz-box-shadow: 2px 1px 25px -10px rgba(0,0,0,0.3);
+box-shadow: 2px 1px 25px -10px rgba(0,0,0,0.3);
+}
 nav {
 -webkit-box-shadow: 2px 1px 25px -10px rgba(0,0,0,0.3);
 -moz-box-shadow: 2px 1px 25px -10px rgba(0,0,0,0.3);
@@ -25,8 +31,8 @@ padding: 0.5rem 2rem;
 a:hover, a:focus {
 text-decoration: none;
 }
-.aside {
-
+.container {
+margin-bottom: 3rem;
 }
 .aside img {
 width: 400px;
@@ -44,18 +50,23 @@ flex-wrap: wrap;
 img {
 width: 100%
 }
+.detail-img img {
+margin-bottom: 2rem;
+}
 .list-group-item {
 padding: 1rem;
 margin-top: 2rem;
 border: none
 }
-.list-group-item figure {
+.list-group-item figure,
+.slick-slide figure {
 background: -webkit-linear-gradient(-45deg, #f3cf3f 0%,#3498db 100%);
 background: linear-gradient(-45deg, #f3cf3f 0%,#3498db 100%);
 margin: 0;
 overflow: hidden;
 }
-.list-group-item img {
+.list-group-item img,
+.slick-slide img {
 opacity: 0.9;
 -webkit-transform: scale3d(1.4,1.4,1);
 transform: scale3d(1.4,1.4,1);
@@ -63,7 +74,8 @@ transform: scale3d(1.4,1.4,1);
 -moz-transition: all 0.3s;
 transition: all 0.3s;
 }
-.list-group-item:hover img {
+.list-group-item:hover img,
+.slick-slide:hover img {
 opacity: 0.7;
 -webkit-transform: scale3d(1.5,1.5,1);
 transform: scale3d(1.5,1.5,1);
@@ -71,7 +83,7 @@ transform: scale3d(1.5,1.5,1);
 -moz-transition: all 0.3s;
 transition: all 0.3s;
 }
-.list-group-item .name {
+.name {
 font-family: 'Roboto Condensed', sans-serif;
 font-weight: normal;
 font-size: 1.25rem;
@@ -79,22 +91,25 @@ color: #999;
 padding: 1rem 0;
 float: left;
 }
-.list-group-item .price {
+.price {
 float: right;
 padding: 1.25rem 0;
 color: #e13640
 }
 .food-item img,
-.wine-item img {
+.wine-item img,
+.wines-container  img {
 -webkit-transform: scale3d(1,1,1);
 transform: scale3d(1,1,1);    
 }
 .food-item:hover img,
-.wine-item:hover img  {
+.wine-item:hover img,
+.wines-container .slick-slide:hover img  {
 -webkit-transform: scale3d(1.1,1.1,1);
 transform: scale3d(1.1,1.1,1);
 }
-.wine-item figure {
+.wine-item figure,
+.wines-container figure {
 background: -webkit-linear-gradient(-45deg, #000 0%,#fff 100%);
 background: linear-gradient(-45deg, #000 0%,#fff 100%);
 }
@@ -196,4 +211,15 @@ border: 1px solid #e13640;
 }
 .detail-content h1 {
 margin-top: 0
+}
+.latest h3 {
+font-family: 'Roboto Condensed', sans-serif;
+font-weight: normal;
+font-size: 1.25rem;
+color: #e13640;
+padding: 1rem 0;
+margin-top: 2rem
+}
+.slick-slide figure {
+border: 10px solid #fff;
 }

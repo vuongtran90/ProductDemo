@@ -218,7 +218,7 @@ const foods = [
 render(
     <Router history={browserHistory}>
         <Route component={Main}>
-            <Route path="/" component={Home}/>
+            <Route path="/" component={Home} foods={foods}/>
              {/* Glass route*/}
             <Route path="/glasses" component={Glass} glasses={glasses}/>
             <Route path="/glasses/:id" component={GlassDetail} glasses={glasses}/>
@@ -228,6 +228,7 @@ render(
             {/* Food route*/}            
             <Route path="/foods" component={Food} foods={foods}/>
             <Route path="/foods/:id" component={FoodDetail} foods={foods}/>
+
         </Route>
     </Router>,
     document.getElementById('container')

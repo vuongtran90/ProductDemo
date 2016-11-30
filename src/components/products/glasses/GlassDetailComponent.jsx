@@ -28,7 +28,7 @@ export default class GlassDetail extends Component {
                            <li><strong>Frame</strong><br/><span>{glass[0].frame}</span></li>
                            <li><strong>Shape</strong><br/><span>{glass[0].shape}</span></li>
                            <li><strong>Gender</strong><br/><span>{glass[0].gender}</span></li>
-                           <li><strong>Price</strong><br/><span>${glass[0].price}</span></li>
+                           <li><strong>Price</strong><br/><span>&#36;{glass[0].price}</span></li>
                        </ul>
                        <ul className="detail-description">
                            <li><strong>Description</strong><br/>{glass[0].description}</li>

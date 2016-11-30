@@ -17,7 +17,7 @@ export default class Food extends Component {
                             <img src={food.img} alt={food.name} />
                         </figure>
                         <span className="name">{food.name}</span>
-                        <span className="price">${food.price}</span>
+                        <span className="price">&#36;{food.price}</span>
                     </div>
                 </Link>
             )

@@ -25,7 +25,7 @@ export default class WinDetail extends Component {
                     <div className="col-sm-6 col-md-6 detail-content">
                        <h1>{wine[0].name}</h1>
                        <ul className="detail-content-header">
-                           <li><strong>Price</strong><br/><span>${wine[0].price}</span></li>
+                           <li><strong>Price</strong><br/><span>&#36;{wine[0].price}</span></li>
                        </ul>
                        <ul className="detail-description">
                            <li><strong>Description</strong><br/>{wine[0].description}</li>
