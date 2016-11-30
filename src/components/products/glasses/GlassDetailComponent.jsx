@@ -16,23 +16,23 @@ export default class GlassDetail extends Component {
 
         return (
             <div>
-                <h1>{glass[0].name}</h1>
-                <div className="row">
-                    <div className="col-sm-6 col-md-4">
+                <div className="row detail">
+                    <div className="col-sm-6 col-md-6 detail-img">
                         <div className="thumbnail">
                             <img src={glass[0].img} alt={glass[0].name} />
                         </div>
                     </div>
-                    <div className="col-sm-6 col-md-4">
-                       <ul>
-                           <li><strong>Description</strong>: {glass[0].description}</li>
-                           <li><strong>Frame</strong>: {glass[0].frame}</li>
-                           <li><strong>Shape</strong>: {glass[0].shape}</li>
-                           <li><strong>Gender</strong>: {glass[0].gender}</li>
-                           <li><strong>Price</strong>: {glass[0].price}</li>
+                    <div className="col-sm-6 col-md-6 detail-content">
+                       <h1>{glass[0].name}</h1>
+                       <ul className="detail-content-header">
+                           <li><strong>Frame</strong><br/><span>{glass[0].frame}</span></li>
+                           <li><strong>Shape</strong><br/><span>{glass[0].shape}</span></li>
+                           <li><strong>Gender</strong><br/><span>{glass[0].gender}</span></li>
+                           <li><strong>Price</strong><br/><span>${glass[0].price}</span></li>
                        </ul>
-                    </div>
-                    <div className="col-md-12">
+                       <ul className="detail-description">
+                           <li><strong>Description</strong><br/>{glass[0].description}</li>
+                       </ul>
                         <button className="btn btn-default" onClick={this.handleRedirect.bind(this)}>Go to glasses</button>
                     </div>
                 </div>

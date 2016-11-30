@@ -15,22 +15,23 @@ export default class FoodDetail extends Component {
         });
 
         return (
+            
             <div>
-                <h1>{food[0].name}</h1>
-                <div className="row">
-                    <div className="col-sm-6 col-md-4">
+                <div className="row detail">
+                    <div className="col-sm-6 col-md-6 detail-img">
                         <div className="thumbnail">
                             <img src={food[0].img} alt={food[0].name} />
                         </div>
                     </div>
-                    <div className="col-sm-6 col-md-4">
-                       <ul>
-                           <li><strong>Description</strong>: {food[0].description}</li>
-                           <li><strong>Price</strong>: {food[0].price}</li>
+                    <div className="col-sm-6 col-md-6 detail-content">
+                       <h1>{food[0].name}</h1>
+                       <ul className="detail-content-header">
+                           <li><strong>Price</strong><br/><span>${food[0].price}</span></li>
                        </ul>
-                    </div>
-                    <div className="col-md-12">
-                        <button className="btn btn-default" onClick={this.handleRedirect.bind(this)}>Go to foods</button>
+                       <ul className="detail-description">
+                           <li><strong>Description</strong><br/>{food[0].description}</li>
+                       </ul>
+                        <button className="btn btn-default" onClick={this.handleRedirect.bind(this)}>Go to foodes</button>
                     </div>
                 </div>
             </div>

@@ -7,24 +7,32 @@ export default class Main extends Component {
             <div>
                 <nav className="navbar ">
                     <ul className="nav">
-                        {/* Change from a to Link */}
                         <li><Link to="/" activeClassName="active" className="logo">PRODUCT</Link></li>
-                        <li>Categories
-                            <ul className="dropDownList">
+                        <li className="category-dropdown">Categories
+                            <ul className="drop-down-list">
                                 <li>
-                                    <Link to="/glasses" activeClassName="active">Glasses</Link>
+                                    <Link to="/glasses" activeClassName="active">
+                                        <img src="http://i.imgur.com/kbwVKgs.jpg" />
+                                            Glasses
+                                    </Link>
                                 </li>
                                 <li>
-                                    <Link to="/wines" activeClassName="active">Wines</Link>
+                                    <Link to="/wines" activeClassName="active">
+                                        <img src="http://i.imgur.com/eF9NITR.jpg" />
+                                            Wines
+                                    </Link>
                                 </li>
                                 <li>
-                                    <Link to="/foods" activeClassName="active">Food</Link>
+                                    <Link to="/foods" activeClassName="active">
+                                        <img src="http://i.imgur.com/AMdmlLY.png" />
+                                            Food
+                                    </Link>
                                 </li>
                             </ul>
                         </li>
                     </ul>
                 </nav>
-                <div className="main-container">
+                <div className="container">
                     {this.props.children}
                 </div>
             </div>

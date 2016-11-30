@@ -10,15 +10,20 @@ export default class Food extends Component {
             return (
                 <Link
                     to={"/foods/"+food.id}
-                    className="list-group-item"
+                    className="col-md-4"
                     key={food.id}>
-                    {food.name}
+                    <div className="list-group-item food-item">
+                        <figure>
+                            <img src={food.img} alt={food.name} />
+                        </figure>
+                        <span className="name">{food.name}</span>
+                        <span className="price">${food.price}</span>
+                    </div>
                 </Link>
             )
         });
         return (
-            <div>
-                <h1>foods page</h1>
+            <div className="grid">
                 <div className="list-group">
                     {foodNode}
                 </div>

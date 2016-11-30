@@ -10,15 +10,20 @@ export default class Wine extends Component {
             return (
                 <Link
                     to={"/wines/"+wine.id}
-                    className="list-group-item"
+                    className="col-md-4"
                     key={wine.id}>
-                    {wine.name}
+                    <div className="list-group-item wine-item">
+                        <figure>
+                            <img src={wine.img} alt={wine.name} />
+                        </figure>
+                        <span className="name">{wine.name}</span>
+                        <span className="price">${wine.price}</span>
+                    </div>
                 </Link>
             )
         });
         return (
-            <div>
-                <h1>wines page</h1>
+            <div className="grid">
                 <div className="list-group">
                     {wineNode}
                 </div>

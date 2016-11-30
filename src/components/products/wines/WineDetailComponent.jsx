@@ -16,23 +16,20 @@ export default class WinDetail extends Component {
 
         return (
             <div>
-                <h1>{wine[0].name}</h1>
-                <div className="row">
-                    <div className="col-sm-6 col-md-4">
+                <div className="row detail">
+                    <div className="col-sm-6 col-md-6 detail-img">
                         <div className="thumbnail">
                             <img src={wine[0].img} alt={wine[0].name} />
                         </div>
                     </div>
-                    <div className="col-sm-6 col-md-4">
-                       <ul>
-                           <li><strong>Description</strong>: {wine[0].description}</li>
-                           <li><strong>Frame</strong>: {wine[0].frame}</li>
-                           <li><strong>Shape</strong>: {wine[0].shape}</li>
-                           <li><strong>Gender</strong>: {wine[0].gender}</li>
-                           <li><strong>Price</strong>: {wine[0].price}</li>
+                    <div className="col-sm-6 col-md-6 detail-content">
+                       <h1>{wine[0].name}</h1>
+                       <ul className="detail-content-header">
+                           <li><strong>Price</strong><br/><span>${wine[0].price}</span></li>
                        </ul>
-                    </div>
-                    <div className="col-md-12">
+                       <ul className="detail-description">
+                           <li><strong>Description</strong><br/>{wine[0].description}</li>
+                       </ul>
                         <button className="btn btn-default" onClick={this.handleRedirect.bind(this)}>Go to wines</button>
                     </div>
                 </div>
