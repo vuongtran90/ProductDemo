@@ -19,5 +19,7 @@ npm install
 ##Running :
 
 After install local server run 
+
 npm start
+
 and access localhost:8080 in browser
