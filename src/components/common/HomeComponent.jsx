@@ -20,21 +20,25 @@ export default class Home extends Component {
                             <div>
                                 <figure>
                                     <img src='http://i.imgur.com/kbwVKgs.jpg' />
+                                <span>HT01</span>
                                 </figure>
                             </div>
                             <div>
                                 <figure>
                                     <img src='http://i.imgur.com/EGfySVL.jpg' />
+                                <span>HT02</span>
                                 </figure>
                             </div>
                             <div>
                                 <figure>
                                     <img src='http://i.imgur.com/zMyW9bF.jpg' />
+                                <span>HT03</span>
                                 </figure>
                             </div>
                             <div>
                                 <figure>
                                     <img src='http://i.imgur.com/DNHN7IO.jpg' />
+                                <span>HT04</span>
                                 </figure>
                             </div>
                         </Slider>
@@ -45,21 +49,25 @@ export default class Home extends Component {
                             <div>
                                 <figure>
                                     <img src='http://i.imgur.com/eF9NITR.jpg' />
+                                <span>BT01</span>
                                 </figure>
                             </div>
                             <div>
                                 <figure>
                                     <img src='http://i.imgur.com/FL10kY5.jpg' />
+                                <span>BT02</span>
                                 </figure>
                             </div>
                             <div>
                                 <figure>
                                     <img src='http://i.imgur.com/VNhQWda.jpg' />
+                                <span>BT03</span>
                                 </figure>
                             </div>
                             <div>
                                 <figure>
                                     <img src='http://i.imgur.com/eX0mqYu.jpg' />
+                                <span>BT04</span>
                                 </figure>
                             </div>
                         </Slider>
@@ -70,21 +78,25 @@ export default class Home extends Component {
                             <div>
                                 <figure>
                                     <img src='http://i.imgur.com/2bN3saO.jpg' />
+                                <span>ST01</span>
                                 </figure>
                             </div>
                             <div>
                                 <figure>
                                     <img src='http://i.imgur.com/OMhs0tb.jpg' />
+                                <span>ST02</span>
                                 </figure>
                             </div>
                             <div>
                                 <figure>
                                     <img src='http://i.imgur.com/bxdoNzy.jpg' />
+                                <span>ST03</span>
                                 </figure>
                             </div>
                             <div>
                                 <figure>
                                     <img src='http://i.imgur.com/VoJyXZ8.jpg' />
+                                <span>ST04</span>
                                 </figure>
                             </div>
                         </Slider>
