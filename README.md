@@ -1,5 +1,5 @@
 # ProductDemo
-Is a web ecommerce app includes 3 pages:
+Is a ecommerce web app includes 3 pages:
 - Home
 - Product List
 - Product Detail
